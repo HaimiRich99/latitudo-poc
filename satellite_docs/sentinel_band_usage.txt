@@ -1,0 +1,43 @@
+Using Sentinel Bands for Index Calculation and Visualization
+
+1. Combining Bands to Create Normalized Indexes
+------------------------------------------------
+Certain remote sensing indexes are calculated by mathematically combining specific bands that are sensitive to particular land features.
+Two common examples:
+
+- NDVI (Normalized Difference Vegetation Index):
+  Measures vegetation health and density using Near-Infrared (NIR) and Red bands.
+
+  NDVI = (NIR - Red) / (NIR + Red)
+
+  Bands used:
+  - 'nir' (Band 8 – Near-Infrared, 10m)
+  - 'red' (Band 4 – Red, 10m)
+
+- NDWI (Normalized Difference Water Index):
+  Detects water bodies using Green and NIR bands.
+
+  NDWI = (Green - NIR) / (Green + NIR)
+
+  Bands used:
+  - 'green' (Band 3 – Green, 10m)
+  - 'nir' (Band 8 – Near-Infrared, 10m)
+
+Both indexes return values between -1 and 1, where higher NDVI indicates healthier vegetation and higher NDWI indicates more water content.
+Such indexes are calculated with pairs of frequencies.
+
+2. Stacking Bands for Visualization
+------------------------------------
+Bands can also be stacked (layered) to produce composite images, commonly for visualization or classification.
+
+- True Color Composite (Natural RGB):
+  Combines Red, Green, and Blue bands to simulate what the human eye would see.
+
+  Bands used:
+  - 'red' (Band 4 – Red, 10m)
+  - 'green' (Band 3 – Green, 10m)
+  - 'blue' (Band 2 – Blue, 10m)
+
+  This RGB combination forms the basis for the 'visual' asset in Sentinel data, often used for quick inspection.
+
+Other composites (like false color) use different combinations (e.g., NIR-Red-Green) to enhance vegetation or water detection.

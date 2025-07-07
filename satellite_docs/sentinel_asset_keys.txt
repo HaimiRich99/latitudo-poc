@@ -1,0 +1,21 @@
+| Asset Key        | Description                                                       |
+|------------------|-------------------------------------------------------------------|
+| `aot`            | Aerosol Optical Thickness band (atmospheric correction layer)     |
+| `blue`           | Band 2 – Blue (0.490 µm), 10m resolution                          |
+| `coastal`        | Band 1 – Coastal aerosol (0.443 µm), 60m resolution               |
+| `granule_metadata` | Metadata describing acquisition granule details               |
+| `green`          | Band 3 – Green (0.560 µm), 10m resolution                         |
+| `nir`            | Band 8 – Near-Infrared (0.842 µm), 10m resolution                 |
+| `nir08`          | Band 8a – Narrow NIR (0.865 µm), 20m resolution                   |
+| `nir09`          | Band 9 – Water vapor/IR (0.945 µm), 60m resolution                |
+| `red`            | Band 4 – Red (0.665 µm), 10m resolution                           |
+| `rededge1`       | Band 5 – Red Edge 1 (0.705 µm), 20m resolution                    |
+| `rededge2`       | Band 6 – Red Edge 2 (0.740 µm), 20m resolution                    |
+| `rededge3`       | Band 7 – Red Edge 3 (0.783 µm), 20m resolution                    |
+| `scl`            | Scene Classification Layer (e.g. vegetation, cloud, snow, etc.)  |
+| `swir16`         | Band 11 – Shortwave Infrared 1 (1.610 µm), 20m resolution         |
+| `swir22`         | Band 12 – Shortwave Infrared 2 (2.190 µm), 20m resolution         |
+| `thumbnail`      | Quick low-res preview of the scene                               |
+| `tileinfo_metadata` | Metadata for tile geometry, time, and grid info              |
+| `visual`         | RGB preview image (synthesized from B04, B03, B02)               |
+| `wvp`            | Water Vapor Product layer (used in atmospheric correction)       |
