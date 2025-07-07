@@ -8,7 +8,7 @@ import os
 print('✅ Using Groq backend')
 
 # Make sure GROQ_API_KEY is set in your environment
-groq_api_key = "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"
+groq_api_key = 
 if not groq_api_key:
     raise ValueError("❌ GROQ_API_KEY not found in environment variables")
 
